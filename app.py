@@ -21,8 +21,8 @@ def handle_call():
     return "Successfully Connected"
 
 @app.route('/')
-def index():
-    return "Hello world"
+def home():
+    return render_template('index.html')
 
 #the get method. when we call this, it just return the text "Hey!! I'm the fact you got!!!"
 
